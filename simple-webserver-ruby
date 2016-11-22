@@ -10,8 +10,8 @@ require 'socket' # Provides TCPServer and TCPSocket classes
              "Content-Type: text/html; charset=iso-8859-1",
              "Content-Length: #{resp.length}\r\n\r\n"].join("\r\n")
 
-# Initialize a TCPServer object that will listen on localhost:8080 for incoming connections
-server = TCPServer.new('localhost', 8080)
+# Initialize a TCPServer object that will listen on localhost:3000 for incoming connections
+server = TCPServer.new('localhost', 3000)
 
 # loop infinitely, processing one incoming connection at a time
 loop do
