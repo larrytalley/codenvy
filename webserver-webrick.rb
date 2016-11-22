@@ -15,5 +15,5 @@ webserver = WEBrick::HTTPServer.new(:Port => 3000)
 trap("INT") {
   webserver.shutdown
 }
-webserver.mount "/", ""
+webserver.mount "/", nil
 webserver.start
