@@ -29,7 +29,7 @@
   },
   "projects": [
     {
-      "name": "console-ruby-simple",
+      "name": "webserver-ruby-simple",
       "attributes": {
         "contribute_to_branch": [
           "master"
@@ -37,11 +37,11 @@
       },
       "type": "blank",
       "source": {
-        "location": "https://github.com/che-samples/console-ruby-simple.git",
+        "location": "https://github.com/larrytalley/codenvy.git",
         "type": "git",
         "parameters": {}
       },
-      "path": "/console-ruby-simple",
+      "path": "/webserver-ruby-simple",
       "description": "Simple Ruby Project.",
       "problems": [],
       "mixins": [
@@ -60,24 +60,8 @@
       "type": "custom"
     },
     {
-      "commandLine": "cd ${current.project.path} && rails server -b 0.0.0.0",
-      "name": "run",
-      "attributes": {
-        "previewUrl": "http://${server.port.3000}"
-      },
-      "type": "custom"
-    },
-    {
-      "commandLine": "cd /projects/console-ruby-simple && ruby main.rb",
-      "name": "console-ruby-simple: run",
-      "attributes": {
-        "previewUrl": ""
-      },
-      "type": "custom"
-    },
-    {
-      "commandLine": "cd /projects/webserver;ruby webserver.rb",
-      "name": "runwebserver",
+      "commandLine": "cd /projects/console-ruby-simple && ruby simple-webserver.rb",
+      "name": "simple-webserver: run",
       "attributes": {
         "previewUrl": ""
       },
