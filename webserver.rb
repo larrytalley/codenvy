@@ -18,7 +18,7 @@ while (session = webserver.accept)
            "Date: Tue, 14 Dec 2010 10:48:45 GMT",
            "Server: Ruby",
            "Content-Type: text/html; charset=iso-8859-1",
-           "Content-Length: #{resp.length}\r\n\r\n"].join("\r\n")
+           "Content-Length: #{response.length}\r\n\r\n"].join("\r\n")
 
   socket.print headers
   
