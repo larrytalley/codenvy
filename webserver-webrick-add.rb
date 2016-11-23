@@ -31,6 +31,7 @@ end
 
 class MyServlet < WEBrick::HTTPServlet::AbstractServlet
     def do_GET (request, response)
+        STDERR.puts request
         if request.query["a"] && request.query["b"]
             a = request.query["a"]
             b = request.query["b"]
