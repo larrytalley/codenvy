@@ -10,13 +10,13 @@ require "webrick"
     It comes with most installations of Ruby by default (it’s part of the standard library), 
     so you can usually create a basic web/HTTP server with only several lines of code.
     
-    The following code creates a generic WEBrick server on the local machine on port 1234, 
+    The following code creates a generic WEBrick server on the local machine on port 3000, 
     shuts the server down if the process is interrupted (often done with Ctrl+C).
     This example lets you call the URL's: "add" and "subtract" and pass through arguments to them
     Example usage: 
-        http://localhost:1234/ (this will show the specified error message)
-        http://localhost:1234/add?a=10&b=10 
-        http://localhost:1234/subtract?a=10&b=9
+        http://localhost:3000/ (this will show the specified error message)
+        http://localhost:3000/add?a=10&b=10 
+        http://localhost:3000/subtract?a=10&b=9
 =end
 
 class MyNormalClass
