@@ -5,9 +5,8 @@ require 'socket' # Provides TCPServer and TCPSocket classes
   # contained in the response. Note that HTTP is whitespace
   # sensitive, and expects each header line to end with CRLF (i.e. "\r\n")
   headers = ["HTTP/1.1 200 OK",
-             "Date: Tue, 14 Dec 2010 10:48:45 GMT",
              "Server: Ruby",
-             "Content-Type: text/html; charset=iso-8859-1",
+             "Content-Type: text/plain; charset=iso-8859-1",
              "Content-Length: #{resp.length}\r\n\r\n"].join("\r\n")
 
 # Initialize a TCPServer object that will listen on localhost:3000 for incoming connections
@@ -29,11 +28,7 @@ loop do
 
   # response header required per HTTP protocol 
   socket.print header
-  # response as an HTML page
-  socket.print "<HTML><BODY><P>"
   socket.print response
-  socket.print "</P></BODY></HTML>"
-
   # Close the socket, terminating the connection
   socket.close
 end
